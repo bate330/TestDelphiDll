@@ -87,6 +87,30 @@ namespace WindowsFormsApp12
         [DllImport("Test.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall)]
         public static extern int Add(int a, int b);
 
+        private void EConnectionError()
+        {
+            MessageBox.Show("Connection Error");
+        }
+
+        private void ESetConnection()
+        {
+            MessageBox.Show("Set Connection");
+        }
+
+        private void EDownloadId()
+        {
+            MessageBox.Show("Download ID");
+        }
+
+        private void EDownloadStatus()
+        {
+            MessageBox.Show("Download Status");
+        }
+
+        private void EDownloadCounters()
+        {
+            MessageBox.Show("Download Counters");
+        }
 
         private void OK_Click(object sender, EventArgs e)
         {
@@ -107,7 +131,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Connection Error");
+                        EConnectionError();
                     }
                     break;
                 case 1:
@@ -118,7 +142,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firstly: Set Connection");
+                        EConnectionError();
                     }
                     
                     break;
@@ -133,7 +157,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firstly: Set Connection");
+                        ESetConnection();
                     }
                     break;
                 case 3:
@@ -144,7 +168,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firstly: Set Connection");
+                        ESetConnection();
                     }
                     break;
                 case 4:
@@ -159,7 +183,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firstly: Set Connection");
+                        ESetConnection();
                     }
                     
                     break;
@@ -170,7 +194,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Connection Error");
+                        EConnectionError();
                     }
 
                     break;
@@ -181,7 +205,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Disconnection Error");
+                        EConnectionError();
                     }
                     break;
                 case 7:
@@ -199,7 +223,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firstly: Set Connection");
+                        EConnectionError();
                     }
                     break;
                 case 8:
@@ -209,7 +233,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firstly: Set Connection");
+                        ESetConnection();
                     }
                     break;
                 case 9:
@@ -227,7 +251,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Id");
+                        EDownloadId();
                     }
                     break;
                 case 10:
@@ -238,7 +262,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Id");
+                        EDownloadId();
                     }
                     break;
                 case 11:
@@ -252,7 +276,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Id");
+                        EDownloadId();
                     }
                     break;
                 case 12:
@@ -263,7 +287,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Id");
+                        EDownloadId();
                     }
                     break;
                 case 13:
@@ -273,7 +297,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Id");
+                        EDownloadId();
                     }
                     break;
                 case 14:
@@ -291,7 +315,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Id");
+                        EDownloadId();
                     }
                     
                     break;
@@ -310,7 +334,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Status");
+                        EDownloadId();
                     }
                     
                     break;
@@ -336,7 +360,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Status");
+                        EDownloadStatus();
                     }
                     break;
                 case 17:
@@ -347,7 +371,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Status");
+                        EDownloadStatus();
                     }
                     
                     break;
@@ -362,7 +386,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Status");
+                        EDownloadStatus();
                     }
                     
                     break;
@@ -373,7 +397,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Set Connection");
+                        ESetConnection();
                     }
                     
                     break;
@@ -384,7 +408,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Set Connection");
+                        ESetConnection();
                     }
                     break;
                 case 21:
@@ -395,7 +419,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Status");
+                        EDownloadStatus();
                     }
                     
                     break;
@@ -414,7 +438,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Status");
+                        EDownloadStatus();
                     }
                     
                     break;
@@ -425,7 +449,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Status");
+                        EDownloadStatus();
                     }
                     break;
                 case 24:
@@ -436,7 +460,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Counters");
+                        EDownloadCounters();
                     }
                     
                     break;
@@ -448,7 +472,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Download Status");
+                        EDownloadStatus();
                     }
                     
                     break;
@@ -459,7 +483,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Set Connection");
+                        ESetConnection();
                     }
                     break;
                 case 27:
@@ -479,7 +503,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Firsty: Set Connection");
+                        ESetConnection();
                     }
                     
                     break;
@@ -502,7 +526,7 @@ namespace WindowsFormsApp12
                     }
                     catch
                     {
-                        MessageBox.Show("Make sure if dll file exists");
+                        MessageBox.Show("Make sure if Test.dll file exists");
                     }
                     
                     break;
